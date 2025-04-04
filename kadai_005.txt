@@ -1,0 +1,45 @@
+user@DESKTOP-OMPPMI3 MINGW64 ~
+$ cd desktop
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop
+$ mkdir git_challenge
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop
+$ cd git_challenge
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/user/Desktop/git_challenge/.git/
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge (main)
+$ touch hello_world.txt
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge (main)
+$ echo "Hello,world!" >>world.txt
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge (main)
+$ git add world.txt
+warning: in the working copy of 'world.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main (root-commit) 4452043] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 world.txt
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge (main)
+$ echo "こんにちは、世界！" >>world.txt
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge (main)
+$ git add world.txt
+warning: in the working copy of 'world.txt', LF will be replaced by CRLF the next time Git touches it
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 3d29974] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+
+user@DESKTOP-OMPPMI3 MINGW64 ~/desktop/git_challenge (main)
+$ git log --oneline
+3d29974 (HEAD -> main) 日本語訳を追記
+4452043 hello_world.txtを追加
